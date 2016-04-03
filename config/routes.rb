@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations"}
   
   root 'pages#home'
+  get 'dashboard', to: 'pages#dashboard'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
